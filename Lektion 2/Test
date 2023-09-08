@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeppe Solvang Thomsen</title>
+</head>
+<body style="background-color: #F9A806">
+    <div style="color: #06F9A8">
+        <body><del>Hello</del>What is up world!</body>
+        <body style="font-size: larger;">I love drinking H<sub>2</sub>0 alot!</body>
+        <body style="text-align: center;">This text is in the center!</body>
+
+    </div>
+</body>
+</html> 
