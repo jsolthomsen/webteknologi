@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right top, orange, aquamarine);
+    margin: 5px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table {
+    border: 5px solid aqua; 
+    border-radius: 10px; 
+    background-image: url(download.jpeg);
+}
+th {
+    border: 2px inset green;
+    border-radius: 10px
+}
+td {border: 2px inset green; 
+    border-radius: 10px}
+
+h1 {
+    font-family: fantasy;
+    color: blue;
+}
+
+h1:hover {
+    color:red;
+    font-size: 50px;
+}
+a:hover {
+    color:pink;
+    font-size: 20px;
+}
+img {
+    border: 5px solid;
+    border-color: aqua;
+    border-radius: 50px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
