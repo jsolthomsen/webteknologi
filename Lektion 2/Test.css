@@ -1,0 +1,18 @@
+td {
+    width: 50px;
+    height: 50px;
+}
+table {
+    border: 2px solid black;
+}
+.black {
+    background-color: rgba(0, 0, 0, 0.631);
+}
+.white {
+    background-color: rgba(255, 255, 255, 0.579);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
