@@ -1,0 +1,21 @@
+#navbar {
+    position: sticky;
+    color: red;
+    background-color: aliceblue;
+    font-size: 30px;
+}
+
+.images {
+    display:flex;
+    justify-content: space-between;
+    background: linear-gradient(to top right, blue,yellow);
+    border: 5px solid red;
+    border-radius: 20px;
+    margin:10px;
+    flex-flow: row wrap;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
