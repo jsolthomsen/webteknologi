@@ -1,8 +1,10 @@
 #navbar {
     position: sticky;
+    display: flex;
     color: red;
     background-color: aliceblue;
     font-size: 30px;
+    justify-content: space-around;
 }
 
 .images {
