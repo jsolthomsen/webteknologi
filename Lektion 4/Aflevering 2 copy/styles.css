@@ -1,0 +1,71 @@
+* {
+    font-family: fantasy;
+}
+
+html {
+    height: 100%;
+}
+
+h1 {
+    font-family: fantasy;
+    color: blue;
+}
+
+body {
+    background: linear-gradient(to right top, orange, aquamarine);
+    margin: 5px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    border: 5px solid;
+    border-color: aqua;
+    border-radius: 50px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+div.knapBar a:hover {
+    color:pink;
+    font-size: 20px;
+}
+
+a {
+    color:blue;
+}
+
+a:hover {
+    color: pink;
+    font-size: 18px;
+}
+
+.div-table {
+    display: table;                    
+    border: 3px solid #af0808;         
+    border-spacing: 5px;
+  }
+.div-table-row {
+    display: table-row;
+  }
+.div-table-col {
+    float:left;
+    display: table-column;         
+    width: 225px;  
+    height: 50px;       
+    background-color: #17a4c0;
+    color: beige;
+    font-size: 15px;
+  }
+
+.buttonBar {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 10px;
+    padding: 3px;
+    font-size: 20px;
+    background: linear-gradient(orange, aquamarine);
+    color: black;
+    justify-content: center;
+    justify-content: space-around;
+}
