@@ -6,10 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Testing of D3</title>
     <script type="text/javascript" src="d3.js"></script>
+    <style>
+      div.bar {
+        display: inline-block;
+        width: 20px;
+        background-color: teal;
+        margin-right: 2px;
+      }
+    </style>
   </head>
   <body>
-	<script type="text/javascript">
 
+	<script type="text/javascript">
+// All of the variables
+     var w = 500;
+    var h = 100;
+    var barPadding = 1;
+    var dataset =[
+              [5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+              [410,12], [475, 44], [25, 67], [85, 21], [220, 88]
+           ];
+    // var dataset = [12, 5, 20, 7, 16, 3, 18, 22, 25, 9, 14, 23, 6, 21, 11, 2, 13, 8, 19, 4];
+    /*var svg = d3.select("body")
+       .append("svg")
+       .attr("width", w)
+       .attr("height", h);
+          // Bar chart
+        svg.selectAll("rect")
+           .data(dataset)
+           .enter()
+           .append("rect")
+           .attr("x", function(d, i) {
+            return i * (w / dataset.length);
+           })
+           .attr("y", function(d) {
+            return h - d * 6;
+           })
+           .attr("width", (w / dataset.length) - barPadding)
+           .attr("height", function(d) {
+            return d * 6;
+           })
+           .attr("fill", function(d) {
+            return "rgb(0,0, " + Math.round(d * 10) + ")";
+           });
+
+           // Labels on the bars
+        svg.selectAll("text")
+           .data(dataset)
+           .enter()
+           .append("text")
+           .text(function(d) {
+            return d;
+           })
+           .attr("x", function(d, i) {
+            return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
+           })
+           .attr("y", function(d) {
+            return h - (d * 6) + 14;
+           })
+           .attr("font-family", "sans-serif")
+           .attr("font-size", "11px")
+           .attr("fill", "white"); */
+
+           
+
+           var svg = d3.select("body")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h);
+
+			svg.selectAll("circle")
+			   .data(dataset)
+			   .enter()
+			   .append("circle")
+			   .attr("cx", function(d) {
+			   		return d[0];
+			   })
+			   .attr("cy", function(d) {
+			   		return d[1];
+			   })
+			   .attr("r", 5);
     </script>
   </body>
 </html>
